@@ -1,0 +1,56 @@
+{
+  "name": "animation-timeline-js",
+  "version": "2.1.7",
+  "description": "animation timeline control based on the canvas.",
+  "main": "lib/animation-timeline.min.js",
+  "types": "lib/animation-timeline.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/preset-env": "7.12.10",
+    "@babel/preset-typescript": "7.12.7",
+    "@types/chai": "4.2.14",
+    "@types/mocha": "8.2.0",
+    "@typescript-eslint/eslint-plugin": "4.10.0",
+    "@typescript-eslint/parser": "4.10.0",
+    "babel-loader": "8.2.2",
+    "eslint": "7.15.0",
+    "eslint-config-prettier": "7.0.0",
+    "eslint-plugin-prettier": "3.3.0",
+    "prettier": "2.2.1",
+    "ts-loader": "8.0.12",
+    "typescript": "4.1.3",
+    "webpack": "5.10.1",
+    "webpack-cli": "4.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Run tests/unittest.html explicitly to execute tests\" && exit 1",
+    "build-typescript-definitions": "tsc -emitDeclarationOnly",
+    "build": "tsc && webpack && npm run build-tests",
+    "webpack": "npm run build",
+    "build-tests": "tsc -p tsconfig.tests.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ievgennaida/js-animation-timeline-control.git"
+  },
+  "keywords": [
+    "js",
+    "animation",
+    "timeline",
+    "canvas",
+    "html5",
+    "no",
+    "libs",
+    "keyframes",
+    "editor"
+  ],
+  "author": "Ievgen Naida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ievgennaida/js-animation-timeline-control/issues"
+  },
+  "homepage": "https://ievgennaida.github.io/animation-timeline-control/index.html"
+}
